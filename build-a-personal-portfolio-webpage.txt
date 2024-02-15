@@ -1,0 +1,279 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>The Fool's Portfolio</title>
+<script src="https://kit.fontawesome.com/e19a01c1ae.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="An HTML/CSS Portfolio for WillTheFoolLearn">
+</head>
+<body>
+  <main>
+    <section id="navbar-section">
+      <nav id="navbar">
+        <ul>
+          <li><a href="#welcome-section">Welcome</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </section>
+    <section id="welcome-section">
+      <h1>Will the Fool learn?</h1>
+      <h3>Maybe here's some proof</h3>
+    </section>
+    <section id="projects">
+      <div id="project-section">
+        <div></div>
+        <div class="project-tile">
+          <a href="https://en.wikipedia.org/wiki/Characters_of_the_Final_Fantasy_VII_series#Other_characters" target="_blank">
+          <img class="project-image" src="https://cdn.discordapp.com/attachments/1078805489158197361/1207355449121443910/Jessie_with_a_grenade_from_FFVII_Remake.webp?ex=65df5862&is=65cce362&hm=a62beb55ee5f6670492c0bb729900d288e80174a9c4915dfc7084ee1527fec04&" alt="Jessie holding a grenade and pointing towards the camera looking wonderful">
+           <div class="project-link">
+            <div class="project-link-text">Jessie Rasberry</div>
+            </div>
+          <p class="project-text">Everything you could ever want to know about Jessie Rasberry</p>
+          </a>
+        </div>
+        <div class="project-tile">
+          <a href="https://en.wikipedia.org/wiki/Aerith_Gainsborough" target="_blank">
+          <img class="project-image" src="https://img.game8.co/3239528/c0e48c0b7196fd4c867493fd8072eb42.jpeg/show" alt="Aerith holding a yellow flower and looking great">
+          <div class="project-link">
+            <div class="project-link-text">Aerith Gainsborough</div>
+            </div>
+          <p class="project-text">Aerith is another great choice and you can learn about her too</p>
+          </a>
+        </div>
+        <div class="project-tile">
+          <a href="https://en.wikipedia.org/wiki/Tifa_Lockhart" target="_blank">
+          <img class="project-image" src="https://oyster.ignimgs.com/mediawiki/apis.ign.com/final-fantasy-vii-remake/9/94/Final-Fantasy-VII-Remake-Tifa.jpg?width=1280" alt="Tifa slouching and being lazy and just looking gross">
+           <div class="project-link">
+            <div class="project-link-text">Tifa Lockhart</div>
+            </div>
+              <p class="project-text">I guess if you're desperate there's always Tifa slumming around</p>
+            <div class="project-link">
+          </div>  
+          </a>
+        </div>
+        <div></div>
+      </div>
+    </section>
+    <section id="contact">
+      <div id="contact-section">
+        <h3>That looks like proof</h3>
+        <h1>Some stuff was learned</h1>
+        <div></div>
+        <div>
+          <ul id="contact-list">
+            <li class="list"><a href="https://www.twitch.tv/willthefoollearn" target="_blank"><i class="fa-brands fa-twitch"></i>willthefoollearn</a></li>
+            <li class="list"><a href="https://twitter.com/willfoollearn" target="_blank"><i class="fa-brands fa-twitter"></i>@willfoollearn</a></li>
+            <li class="list"><a id="profile-link" href="https://github.com/WillTheFoolLearn/WillTheFoolLearn/tree/main" target="_blank"><i class="fa-brands fa-github"></i>WillTheFoolLearn</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+* {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-padding-top: 70px;
+}
+
+body {
+  font-family: oxygen, sans-serif;
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  background-color: #3399FF;
+  z-index: 2;
+}
+
+#navbar a {
+  color: lightgray;
+}
+
+#navbar > ul > li {
+  list-style: none;
+  font-size: 2em;
+  text-transform: lowercase;
+  font-weight: 300;
+}
+
+#navbar > ul > li::after {
+  content: "|";
+  color: #555555;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+#navbar > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: -5px;
+  margin-left: 4px;
+}
+
+#welcome-section {
+  padding-top: 70px;
+  height: 100vh;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient( #FFFFCC, pink, lightpink);
+}
+
+#welcome-section  h1 {
+  font-size: calc(100% + 20vh);
+  word-spacing: 999rem;
+  line-height: .8;
+}
+
+#welcome-section  h3 {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  z-index: 1;
+}
+
+#project-section {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(gray, lightgray, gray);
+}
+
+.project-tile {
+  margin: 10px;
+  height: 400px;
+  max-width: 300px;
+}
+
+.project-image {
+  height: 50%;
+  width: 300px;
+  object-fit: cover;
+  border-radius: 6px 6px 0px 0px;
+  z-index: 2;
+  cursor: default;
+}
+
+.project-link {
+  position: absolute;
+  background-color: lightgray;
+  width: 300px;
+  height: 0px;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 0px 0px 6px 6px;
+  transition: background-color 0.3s, height 0.3s, padding 0.3s;
+}
+
+.project-link:hover {
+  background-color: lightpink;
+  height: 200px;
+  width: 300px;
+  padding-bottom: 200px;
+  position: absolute;
+}
+
+.project-link-text {
+  display: flex;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+  opacity: 0%;
+  transition: opacity 0.2s cubic-bezier(.39,.73,.33,1.07);
+  z-index: 1;
+}
+
+.project-link-text:hover {
+  opacity: 100%;
+}
+
+.project-text {
+  padding: 10px;
+  height: 50%;
+  background-color: lavenderblush;
+  font-size: 1.5em;
+  border-radius: 0 0 6px 6px;
+}
+
+#contact-section {
+  background: linear-gradient(lightpink, pink, #FFFFCC);
+  height: calc(100vh - 70px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#contact-section h3 {
+  padding-left: 8px;
+  padding-top: 4px;
+}
+
+#contact-section h1 {
+  font-size: calc(100% + 20vh);
+  word-spacing: 999rem;
+  line-height: .8;
+  text-align: right;
+}
+
+#contact-list {
+  list-style: none;
+  display: flex;
+  width: 800px;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 1.5em;
+  padding-bottom: 4px;
+}
+
+.list {
+  transition: transform 0.3s ease-in 0.1s;
+}
+
+.list:hover {
+  transform: translateY(-10px);
+
+}
+
+@media (max-width: 950px) {
+  #project-section {
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: center;
+}
+
+** end of undefined **
+
